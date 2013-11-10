@@ -1,0 +1,14 @@
+.navbar
+  .navbar-inner
+    .container
+      ul.nav
+        li(ui-route='/home', ng-class='{active:$uiRoute}')
+          a(href='#/home') Home
+        li(ui-route='/about', ng-class='{active:$uiRoute}')
+          a(href='#/about') What is it?
+        li
+          a(href='https://www.harp.io') Harp Platform
+        li
+          a(href='http://harpjs.com') Harp Server
+        li
+          a(href='https://github.com/silentrob/ng-harp-boilerplate') Github

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="ngHarpBoilerplate" ng-controller="AppCtrl">
+  <head>
+    <title ng-bind="pageTitle"></title>
+
+    <!-- social media tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@HarpPlatform">
+    <meta name="twitter:title" content="ngHarpBoilerplate">
+    <meta name="twitter:description" content="Non-Trivial AngularJS Made Easy: Everything you need to kickstart AngularJS projects: a best-practice directory structure.">
+    <meta name="twitter:creator" content="@HarpPlatform">
+    <meta name="twitter:image:src" content="https://a248.e.akamai.net/assets.github.com/images/modules/logos_page/Octocat.png?1366128846">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    <!-- compiled CSS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="vendor/angular/angular.js"></script>
+    <script type="text/javascript" src="vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script type="text/javascript" src="vendor/placeholders/angular-placeholders-0.0.1-SNAPSHOT.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+    <script type="text/javascript" src="vendor/angular-ui-utils/modules/route/route.js"></script>
+
+    <!-- Your App JavaScript -->
+    <script type="text/javascript" src="app/about/about.js"></script>
+    <script type="text/javascript" src="app/home/home.js"></script>
+    <script type="text/javascript" src="app/app.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="masthead">
+        <h3 class="muted">ng-harp-boilerplate 
+          <small>
+            <a href="http://github.com/silentrob/ng-harp-boilerplate/">v0.0.1</a>
+          </small>
+        </h3>
+        
+        <%- partial("_shared/nav") %>
+
+      </div>
+    </div>
+
+    
+    <div class="container" ui-view="main"></div>
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+
+          <p>
+            (c) 2013 Ported by Rob Ellis for the Harp web server<br />
+            ng-harp-boilerplate is based on <a href="https://github.com/ngbp/ng-boilerplate">ng-boilerplate</a>  and uses: 
+            <a href="http://www.angularjs.org">AngularJS</a>,
+            <a href="http://getbootstrap.com">Bootstrap</a>, 
+            <a href="http://angular-ui.github.com/bootstrap">UI Bootstrap</a>,
+            and 
+            <a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a>.        
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
